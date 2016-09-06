@@ -1,10 +1,10 @@
-title: Stack Problems
+title: 삽질 기록용
 description: My Personal Stack Problems
-author: Agus Makmun
-github: https://github.com/agusmakmun
+author: Seul Lee(이슬)
+github: https://github.com/lee-seul
 about: I am freelance developer. Currently doing more in backend, actually in Python and Django.
 disqus_shortname: stackproblems
-google_analytics: UA-XXXXXXXX-Y
+#google_analytics: UA-XXXXXXXX-Y
 
 enableTags: true
 tagarray: []
@@ -16,19 +16,19 @@ collections:
 
 social:
     - icon: fa-facebook
-      link: "#"
-    - icon: fa-skype
-      link: "#"
-    - icon: fa-twitter
-      link: "https://twitter.com/agusmakmun6"
-    - icon: fa-linkedin
-      link: "#"
-    - icon: fa-stack-exchange
-      link: "#"
+      link: "https://www.facebook.com/blacksangi"
+#    - icon: fa-skype
+#      link: "#"
+#    - icon: fa-twitter
+#      link: "https://twitter.com/agusmakmun6"
+#    - icon: fa-linkedin
+#      link: "#"
+#    - icon: fa-stack-exchange
+#      link: "#"
 
-share:
-  twitter_username: agusmakmun6
-  fb_appid: 1749788565247320
+#share:
+#  twitter_username: agusmakmun6
+#  fb_appid: 1749788565247320
 
 urls:
     - text: About Me
@@ -36,11 +36,11 @@ urls:
     - text: Projects
       url: /projects/
     - text: Github
-      url: https://github.com/agusmakmun
+      url: https://github.com/lee-seul
     - text: XML Feed
       url: /feed.xml
 
-url: "https://agusmakmun.github.io"
+url: "https://lee-seul.github.io"
 baseurl: ""
 paginate: 20
 per_page: 20
