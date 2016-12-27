@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Python과 Django를 공부하고 있는 개발 지망생
+I am freelance developer. Currently doing more in backend, actually in Python and Django.
 
-email: blacksangi@gmail.com
+email: agus[at]python.web.id
