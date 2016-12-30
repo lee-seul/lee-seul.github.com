@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python collections module"
+title: "Python collections module 01, Counter"
 date:  2016-12-30 21:38:20 +0900
 categories: [python]
 ---
@@ -20,12 +20,35 @@ from collections import Counter
 print(Counter(['aa', 'cc', 'dd', 'aa', 'bb', 'ee']))
 print(Counter({"가":3, "나":2, "다":5}))
 print(Counter(a=3, b=23, c=11, d=0))
+print(Counter("Hellow hellow"))
 
 {% endhighlight %}
+ 
 
 ```python
 Counter({'aa': 2, 'ee': 1, 'bb': 1, 'cc': 1, 'dd': 1})
 Counter({'다': 5, '가': 3, '나': 2})
 Counter({'b': 23, 'a': 3, 'c': 11, 'd': 0})
+Counter({'l': 4, 'o': 2, 'w': 2, 'e': 2, 'h': 1, ' ': 1, 'H': 1}) 
 ```
+
+## update
+카운터 객체에 값을 추가할 때
+{% highlight python %}
+
+ct = Counter("abcde")
+print(ct)
+
+ct.update({'f':4, 'z': 100})
+print(ct)
+
+{% endhighlight %}
+
+
+```python
+Counter({'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
+Counter({'z': 100, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
+```
+
+
 
