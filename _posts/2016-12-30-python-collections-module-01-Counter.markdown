@@ -1,4 +1,4 @@
----
+--- 
 layout: post
 title: "Python collections module 01, Counter"
 date:  2016-12-30 21:38:20 +0900
@@ -32,7 +32,7 @@ Counter({'b': 23, 'a': 3, 'c': 11, 'd': 0})
 Counter({'l': 4, 'o': 2, 'w': 2, 'e': 2, 'h': 1, ' ': 1, 'H': 1}) 
 ```
 
-## update
+<em>update()</em>
 카운터 객체에 값을 추가할 때
 {% highlight python %}
 
@@ -42,13 +42,50 @@ print(ct)
 ct.update({'f':4, 'z': 100})
 print(ct)
 
+# 이런식으로도 가능
+ct['x'] = 0
+print(ct)
+
 {% endhighlight %}
 
 
 ```python
 Counter({'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
 Counter({'z': 100, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
+Counter({'z': 100, 'x': 0, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
 ```
 
+<em>elements()</em>
+
+{% highlight python %}
+
+# 위에서 쓴 ct
+print(list(ct.elements()))
+
+{% endhighlight %}
+
+
+```python
+['c', 'a', 'b', 'f', 'f', 'f', 'f', 'd', 'e', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z']
+```
+
+<em>most_common()</em>
+가장 많이 나온 값들의 시퀀스를 리턴
+
+{% highlight python %}
+
+print(ct.most_common())
+print(ct.most_common(1))
+print(ct.most_common(3))
+
+{% endhighlight %}
+
+```python
+[('z', 100), ('f', 4), ('c', 1), ('a', 1), ('b', 1), ('d', 1), ('e', 1)]
+[('z', 100)]
+[('z', 100), ('f', 4), ('c', 1)]
+```
+
+<em>Counter 객체는 산술/집합 연산이 가능하다.(+, -, |, & 등)</em>
 
 
