@@ -32,7 +32,7 @@ Counter({'b': 23, 'a': 3, 'c': 11, 'd': 0})
 Counter({'l': 4, 'o': 2, 'w': 2, 'e': 2, 'h': 1, ' ': 1, 'H': 1}) 
 ```
 
-##<em>update()</em>
+<h2><em>update()<em></h2>
 카운터 객체에 값을 추가할 때
 {% highlight python %}
 
@@ -55,7 +55,7 @@ Counter({'z': 100, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
 Counter({'z': 100, 'x': 0, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
 ```
 
-<em>elements()</em>
+<h2><em>elements()</em></h2>
 
 {% highlight python %}
 
@@ -69,7 +69,7 @@ print(list(ct.elements()))
 ['c', 'a', 'b', 'f', 'f', 'f', 'f', 'd', 'e', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z']
 ```
 
-##<em>most_common()</em>
+<h2><em>most_common()</em></h2>
 가장 많이 나온 값들의 시퀀스를 리턴
 
 {% highlight python %}
@@ -86,6 +86,6 @@ print(ct.most_common(3))
 [('z', 100), ('f', 4), ('c', 1)]
 ```
 
-##<em>Counter 객체는 산술/집합 연산이 가능하다.(+, -, |, & 등)</em>
+<h2><em>Counter 객체는 산술/집합 연산이 가능하다.(+, -, |, & 등)</em></h2>
 
 
