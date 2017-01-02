@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Branch 전략, 분기와 병합 시점
+title: "Branching, Stragies
 date: 2017-01-02 20:13:31 +0900
 categories: [git]
 ---
