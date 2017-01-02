@@ -13,7 +13,9 @@ Git for Teams, 챕터3 내용을 정리한 것
 브랜치란, 다른 브랜치에 영향을 받지 않는 독립적인 작업 영역으로 특정 커밋에 대한 이름이 있는 포인터이다.
 각 커밋 객체는 부모에 대한 참조를 갖는다. 
 
-![branch Image](../images/2017-01-02-git-for-teams-branching-strategies_01.png)
+![branch Image](https://rwa.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/2017-01-02-git-for-teams-branching-strategies_01.png)
+
+
 
 혼자서 진행하거나 규모가 작은 프로젝트의 경우 하나의 브랜치에서 모든 작업이 이루어질 수도 있지만 대부분의 프로젝트에서는 
 프로젝트가 진행되는 브랜치(master branch) 이외에 실험해보고 싶은 것이 있거나 의견이 한가지 사안에 대해 의견이 여러가지일 때 브랜치는 
