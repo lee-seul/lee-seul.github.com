@@ -3,6 +3,7 @@ layout: post
 title: "Branching, Stragies"
 date: 2017-01-02 20:13:31 +0900
 categories: [git]
+encoding: UTF-8
 ---
 
 Git for Teams, 챕터3 내용을 정리한 것
