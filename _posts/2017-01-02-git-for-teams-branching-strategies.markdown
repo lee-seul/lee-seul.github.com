@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Branching, Stragies
+title: "Branching, Stragies"
 date: 2017-01-02 20:13:31 +0900
 categories: [git]
 ---
