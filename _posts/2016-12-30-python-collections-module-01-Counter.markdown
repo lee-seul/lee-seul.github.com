@@ -2,7 +2,7 @@
 layout: post
 title: "Python collections module 01, Counter"
 date:  2016-12-30 21:38:20 +0900
-categories: [python]
+categories: [python, collections]
 ---
 
 공식 문서: `https://docs.python.org/3/library/collections.html`
