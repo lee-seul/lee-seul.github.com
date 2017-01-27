@@ -14,16 +14,19 @@ Git for Teams, 챕터5 내용을 정리한 것
 Git에서 저장소를 만드는 방법은 크게 3가지이다.
 
 - 기존 저장소의 사본
+
 ```python
 $ git clone {git repositoty URL}
 ```
 
 - 빈 디렉토리(새로만들어진)
+
 ```python
 $ git init # 프로젝트 루트에서 실행
 ```
 
 - 기록되지 않은 파일을 가진 기존 디렉토리
+
 ```python
 $ git init
 $ git add --all # 또는 git add * 
