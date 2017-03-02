@@ -29,12 +29,41 @@ bb = Person(name="Alice", age="23", gender="여")
 {% endhighlight %}
  
 
+#### _replce() 활용 dictionary를 namedtuple로 바꾸기
+
+{% highlight python %}
+
+from collections import namedtuple
+
+def dict_to_tuple(dic):
+    """
+    dictionary를 받아서 namedtuple로 변환하는 함수
+    
+    dic: dictionary
+    """
+    return prototype_people._replce(**dic) # people의 프로토타입 튜플과 _replace()를 활용  
+
+
+people = namedtuple("People", ["namne", "age", "sex"]) # 변환할 dictionary의 key 값들과 매칭될 수 있는 변수명들을 준다. 
+prototype_people = people("", 0, "") # 값이 없는 people named tuple 만들기
+
+test_dic = {"name": "lee", "age": 27, "sex": "M"}
+print(dict_to_tuple(test_dic))
+
+{% endhighlight %}
+
+
+```python
+# dict_to_tuple의 결과값 
+People(name="lee", age=27, sex="M")
+```
+
+
 <br/>
 <br/>
 
 ### 5. OrderedDict
 
-**OrderedDict는 3.6에서 dictionary 구조가 바뀌면서 사라졌다.**
 OrderedDict는 순서를 가지는 dictionary이다.
 
 {% highlight python %}
