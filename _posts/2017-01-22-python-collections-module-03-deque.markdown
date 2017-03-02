@@ -77,7 +77,7 @@ print(deq1)
 
 {% endhighlight %}
 
-####결과값
+#### 결과값
 ```python
 deque(['qqqq', 'H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'aaa'])
 qqqq
@@ -98,7 +98,7 @@ print(deq1)
 
 {% endhighlight %}
 
-####결과값
+#### 결과값
 ```python
 deque(['H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'a', 'b', 'c', 'd'])
 deque(['z', 'y', 'x', 'H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'a', 'b', 'c', 'd'])

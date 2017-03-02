@@ -53,7 +53,7 @@ print(dict_to_tuple(test_dic))
 {% endhighlight %}
 
 
-####결과값
+#### 결과값
 ```python
 # dict_to_tuple의 결과값 
 People(name="lee", age=27, sex="M")
@@ -84,7 +84,7 @@ for key, val in dic.items():
 
 {% endhighlight %}
 
-####결과값
+#### 결과값
 ```python
 1 aaa
 2 bbb

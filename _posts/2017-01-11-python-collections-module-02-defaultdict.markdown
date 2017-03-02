@@ -26,7 +26,7 @@ print(dic.set_default("a", None))
 print(dic.set_default("f", None))
 {% endhighlight %}
  
-####결과값
+#### 결과값
 ```python
 11
 None 
@@ -47,7 +47,7 @@ print(dic['f'])
 
 {% endhighlight %}
 
-####결과값
+#### 결과값
 ```python
 defaultdict(<function <lambda> at 0x100556f28>, {'b': 11, 'a': 10, 'c': 13})
 10
