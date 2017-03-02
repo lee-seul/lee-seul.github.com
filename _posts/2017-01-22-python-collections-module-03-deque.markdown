@@ -30,7 +30,7 @@ print(deq1[-1])
 
 {% endhighlight %}
  
-
+####결과값
 ```python
 deq1 => deque(['H', 'e', 'l', 'l', 'o', ' ', 'P', 'y', 't', 'h', 'o', 'n'])
 deq2 => deque(['a', 'b', 'd', 'a', 'c'])
@@ -52,7 +52,7 @@ print(deq1)
 
 {% endhighlight %}
 
-
+####결과값
 ```python
 12
 H
@@ -77,7 +77,7 @@ print(deq1)
 
 {% endhighlight %}
 
-
+####결과값
 ```python
 deque(['qqqq', 'H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'aaa'])
 qqqq
@@ -98,6 +98,7 @@ print(deq1)
 
 {% endhighlight %}
 
+####결과값
 ```python
 deque(['H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'a', 'b', 'c', 'd'])
 deque(['z', 'y', 'x', 'H', 'e', 'l', 'l', ' ', 'P', 'y', 't', 'h', 'o', 'n', 'a', 'b', 'c', 'd'])

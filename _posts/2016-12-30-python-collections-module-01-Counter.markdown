@@ -24,7 +24,7 @@ print(Counter("Hellow hellow"))
 
 {% endhighlight %}
  
-
+####결과값 
 ```python
 Counter({'aa': 2, 'ee': 1, 'bb': 1, 'cc': 1, 'dd': 1})
 Counter({'다': 5, '가': 3, '나': 2})
@@ -50,7 +50,7 @@ print(ct)
 
 {% endhighlight %}
 
-
+####결과값
 ```python
 Counter({'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
 Counter({'z': 100, 'f': 4, 'c': 1, 'a': 1, 'b': 1, 'd': 1, 'e': 1})
@@ -68,7 +68,7 @@ print(list(ct.elements()))
 
 {% endhighlight %}
 
-
+####결과값
 ```python
 ['c', 'a', 'b', 'f', 'f', 'f', 'f', 'd', 'e', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z', 'z']
 ```
@@ -86,6 +86,7 @@ print(ct.most_common(3))
 
 {% endhighlight %}
 
+####결과값
 ```python
 [('z', 100), ('f', 4), ('c', 1), ('a', 1), ('b', 1), ('d', 1), ('e', 1)]
 [('z', 100)]
