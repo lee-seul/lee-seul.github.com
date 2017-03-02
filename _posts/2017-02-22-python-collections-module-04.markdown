@@ -29,8 +29,8 @@ bb = Person(name="Alice", age="23", gender="여")
 {% endhighlight %}
  
 
-</br>
-</br>
+<br/>
+<br/>
 
 ### 5. OrderedDict
 
