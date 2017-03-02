@@ -29,7 +29,7 @@ bb = Person(name="Alice", age="23", gender="여")
 {% endhighlight %}
  
 
-#### _replce() 활용 dictionary를 namedtuple로 바꾸기
+#### _replace() 활용 dictionary를 namedtuple로 바꾸기
 
 {% highlight python %}
 
@@ -41,7 +41,7 @@ def dict_to_tuple(dic):
     
     dic: dictionary
     """
-    return prototype_people._replce(**dic) # people의 프로토타입 튜플과 _replace()를 활용  
+    return prototype_people._replace(**dic) # people의 프로토타입 튜플과 _replace()를 활용  
 
 
 people = namedtuple("People", ["namne", "age", "sex"]) # 변환할 dictionary의 key 값들과 매칭될 수 있는 변수명들을 준다. 
