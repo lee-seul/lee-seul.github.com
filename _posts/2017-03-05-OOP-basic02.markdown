@@ -1,7 +1,7 @@
 --- 
 layout: post
 title: "Object Oriented Programming with Python, 02"
-date:  2017-03-56 21:28:23 +0900
+date:  2017-03-05 21:28:23 +0900
 categories: [python, concept]
 ---
 
