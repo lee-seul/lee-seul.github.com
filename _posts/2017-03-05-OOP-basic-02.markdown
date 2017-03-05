@@ -1,0 +1,269 @@
+--- 
+layout: post
+title: "Object Oriented Programming with Python, 02"
+date:  2017-03-56 21:28:23 +0900
+categories: [python, concept]
+---
+
+
+### 2. Inheritance
+<br/>
+
+상속은 클래스의 기능을 확장하고 재사용을 가능하게 하는 역할을 한다. 
+
+{% highlight python %}
+
+class Pet(object):
+    def __init__(self, name, kind):
+    self.name = name
+    self.kind = kind
+
+    def __str__(self):
+        return self.name
+
+    def cry(self):
+        pass
+
+    def eat(self):
+        print("냠냠")
+    
+
+class Dog(Pet):
+    def __init__(self, name, friendly=True):
+        super().__init__(name, "Dog")
+
+    def cry(self):
+        print("멍멍 왈왈")
+
+
+class Cat(Pet):
+    def __init__(self, name, loyalty=False):
+        super().__init__(name, "Cat")
+
+    def cry(self):
+        print("야오옹?")
+
+{% endhighlight %}
+
+Pet의 경우 최상위 클래스인 object를 상속받아 Magic Method등을 재정의하여 사용할 수 있고, 
+Dog와 Cat의 경우 Pet을 상속받아 cry, eat 등의 메소드를 사용할 수 있다. 이 때 Pet이 Cat과 Dog의 부모 클래스(혹은 슈퍼 클래스), Cat과 Dog는 Pet의 자식 클래스(혹은 서브 클래스)라고 한다. 
+
+<br/>
+
+
+#### 2.1 super()
+super 메소드는 부모 클래스의 메소드를 호출하는 메소드이다. Dog나 Cat의 \_\_init\_\_아래에서 사용되어 
+Pet의 \_\_init\_\_을 호출한다. 
+
+이때 2개 이상의 부모 클래스를 가지는 경우 super가 호출되는 순서는 \_\_mro\_\_를 통해 결정된다.
+
+super는 \_\_init\_\_뿐만아니라 부모 클래스에서 상속받은 모든 메소드에서 사용하여 메소드를 재정의할 수 있다.
+
+
+<br/>
+
+
+
+#### 2.2 다중 상속(Multiple Inheritance)
+
+ 다중 상속이란 한 클래스가 2개 이상의 부모 클래스로부터 상속을 받는 것을 말한다. 
+
+
+{% highlight python %}
+
+class A(object):
+    def __init__(self):
+        print("A().__init__() 호출")
+    
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+        print("B().__init__() 호출")
+
+
+class C(A):
+    def __init__(self):
+        print("C().__init__() 호출")
+        super().__init__()
+
+
+class D(B, C):
+    def __init__(self):
+        super().__init__()
+        print("D().__init__() 호출")
+
+d = D()
+
+{% endhighlight %}
+
+super의 호출 결과는 다음과 같다. 
+
+##### **결과값**:
+```python
+C().__init__() 호출
+A().__init__() 호출
+B().__init__() 호출
+D().__init__() 호출
+```
+
+D의 경우 B와 C 2개의 부모 클래스를 가지므로 다중 상속을 받고 있다고 할 수 있다.
+
+<br/>
+
+#### 2.3 메소드 재정의(Overriding)
+
+{% highlight python %}
+
+class Pet(object):
+    def __init__(self, name, kind):
+    self.name = name
+    self.kind = kind
+
+    def __str__(self):
+        return self.name
+
+    def cry(self):
+        pass
+    
+
+class Dog(Pet):
+    def __init__(self, name, friendly=True):
+        super().__init__(name, "Dog")
+
+    def cry(self):
+        print("멍멍 왈왈")
+
+
+class Cat(Pet):
+    def __init__(self, name, loyalty=False):
+        super().__init__(name, "Cat")
+
+    def cry(self):
+        print("야오옹?")
+
+{% endhighlight %}
+
+Overriding이란 상속 받은 메소드를 재정의하여 메소드의 기능을 확장, 변경하는 것을 말한다. 즉, 상속 관계에 있는
+클래스 간에 같은 이름의 메소드를 정의하는 것을 Overriding이라고 한다. 
+
+<br/>
+
+#### 2.4 오버로딩(Overloading) 
+
+오버로딩은 한 클래스 내에서 같은 이름의 메소드를 시그니쳐(매개변수의 유형, 매개변수의 갯수) 등을 다르게하여 여러개를 정의하는 것을 말한다. 
+
+
+매개변수의 유형을 다르게한 오버로딩 C++사례: 
+```C++
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int sum_values(int n, int m){
+    return n + m
+}
+
+double sum_values(double n, double m){
+    return n + m
+}
+    
+int main() {
+    cout << sum_values(3, 4) << endl;     // int sum_values 실행, 결과: 7
+    cout << sum_values(3.2, 4.2) << endl; // double sum_values 실행 : 결과: 7.4
+
+    return 0;
+}
+```
+
+<br/>
+
+매개변수의 갯수를 다르게한 오버로딩 C++사례: 
+```C++
+#include <iostream>
+
+using namespace std;
+
+int plus_100(int n) {
+    return n + 100
+}
+
+int plus_100(int n, int m) {
+    return n + m + 100
+}
+    
+int main() {
+    cout << plus_100(100) << endl;     // 첫번째 plus_100 실행, 결과: 200
+    cout << plus_100(100, -100) << endl; // 두번째 plus_100 실행 : 결과: 100
+
+    return 0;
+}
+```
+
+C++뿐만 아니라 Java 등 대부분의 객체지향의 특징을 가진 언어에서는 오버로딩을 지원한다. 
+
+하지만 기본적으로 Python에서는 오버로딩을 지원하지 않는다. 
+오버로딩과 별개로 두번째 사례를 Python으로 짠다면? 
+
+{% highlight python %}
+
+# 키워드 매개변수를 활용
+def plus_100(n, m=None):
+    result = n + 100
+    if m:
+        return result + m   # 값이 2개 일때  
+    return result           # 값이 하나일 때
+
+
+# *args를 활용
+def plus_100(*args):
+    return sum(args) + 100 # 몇 개든 상관 없이 결과를 리턴
+
+{% endhighlight %}
+
+<br/>
+
+#### 2.5 python에서 오버로딩(Overloading) 사용하기 
+
+python 3.4 이후 코어 라이브러리로 포함된 functolls의 singledispatch를 사용!
+
+ {% highlight python %}
+
+from functools import singledispatch
+
+@singledispatch # decorator
+def f(arg):
+    print("String", end=" ")
+    print(arg)
+
+@func.register(int)
+def f(arg):
+    print("Integer", end=" ")
+    print(arg)
+
+@func.register(float)
+def f(arg):
+    print("Float", end=" ")
+    print(arg)
+
+@func.register(type(None))
+def f(arg):
+    print("Nothing")
+
+
+f("ss")       
+f(1000)
+f(11.234)
+f(None)
+
+{% endhighlight %}
+
+
+##### **결과값**:
+```python
+String ss
+Integer 1000
+Float 11.234
+Nothing
+```
