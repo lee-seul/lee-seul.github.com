@@ -1,0 +1,90 @@
+--- 
+layout: post
+title: "Object Oriented Programming with Python, 03"
+date:  2017-03-06 18:28:23 +0900
+categories: [python, concept]
+---
+
+
+### 3. 다형성(Polymorphism)
+<br/>
+
+각 객체가 동일한 인터페이스에 대해 서로 다른 동작을 수행하는 것을 말한다. 허나의 인터페이스로 다수의 클래스에
+접근할 수 있어 관리상 장점이 있다. 
+
+{% highlight python %}
+
+class Human(object):
+    
+    def greeting(self):
+        pass
+    
+    def appreciating(self):
+        pass
+
+
+class Korean(Human):
+
+    def greeting(self):
+        print("안녕")
+    
+    def appreciating(self):
+        print("감사")
+
+
+class American(Human):
+    
+    def greeting(self):
+        print("Hello")
+
+    def appreciating(self):
+        print("thanks")
+
+
+class Japaness(Human):
+    
+    def greeting(self):
+        print("곤니찌와")
+    
+    def appreciating(self):
+        print("아리가또")
+
+{% endhighlight %}
+
+Korean, American, Japaness에서 greeting, appreciating은 모두 같은 메소드명으로 실행되지만 
+각 각 다른 동작을 수행하는데 이러한 것을 다형성이라고 한다. 
+
+또한 다형성은 효율적인 제어를 할 수 있도록 해준다. 
+
+{% highlight python %}
+
+def speaking(Human):
+    Human.greeting()
+    Human.appreciating()
+
+
+k = Korean()
+a = American()
+j = Japaness()
+
+human = [k, a, j]
+for h in human:
+    speaking(h)
+    print()
+
+{% endhighlight %}
+
+##### **결과값**:
+```python
+안녕
+감사
+
+Hello
+thanks
+
+곤니찌와
+아리가또
+```
+
+위처럼 다형성을 활용하지 않을 경우 Korean, Japaness, American에 대해 각각 접근해야하지만
+다형성을 활용할 경우 위처럼 상위 클래스인 Human을 통해 한번에 처리 가능하다. 
