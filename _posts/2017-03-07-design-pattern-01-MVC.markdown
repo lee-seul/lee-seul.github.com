@@ -2,7 +2,7 @@
 layout: post
 title: "Design Patterns, 01, MVC "
 date: 2017-03-07 00:43:31 +0900
-categories: [concept, design pattern]
+categories: [concept, design-pattern]
 encoding: UTF-8
 ---
 
@@ -21,11 +21,11 @@ MVC패턴에서 View와 Controller는 Model에 의존적이지만 Model은 독�
 
 MVC의 예로는 Django(MVC와 유사한 MTV를 사용)가 있다. 
 
-<br/>
+
 
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/MVC_pattern.png)
 
-<br/>
+
 
 #### Model
 

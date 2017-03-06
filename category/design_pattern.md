@@ -1,6 +1,6 @@
 ---
 layout: posts_by_category
-categories: design patterns
+categories: design-patterns
 title: Design Patterns
-permalink: /category/design-patterns
+permalink: /category/design_patterns
 ---
