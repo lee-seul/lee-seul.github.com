@@ -2,7 +2,7 @@
 layout: post
 title: "Design Patterns, 01, MVC "
 date: 2017-03-07 00:43:31 +0900
-categories: [concept, design-pattern]
+categories: [concept, design-patterns]
 encoding: UTF-8
 ---
 
