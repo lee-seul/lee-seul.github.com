@@ -9,7 +9,7 @@ layout: default
     {% for post in paginator.posts %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li> 
     <p align="right">&raquo; <i><span>{{ post.date | date_to_string }}</span></i></p>
-    <br/>
+    <hr/>
     {% endfor %}
     </ol>
 
