@@ -25,7 +25,11 @@ body {
     font-kerning: normal;
 }
 
-
+ul.c {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

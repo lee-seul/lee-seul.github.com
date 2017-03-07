@@ -15,7 +15,7 @@ layout: default
 
     <!-- Pagination links -->
     {% if paginator.total_pages > 1 %}
-    <ul class="pagination pagination-sm" style="text-align: center;">
+    <ul class="pagination pagination-sm c">
       {% if paginator.previous_page %}
         <li>
           <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
