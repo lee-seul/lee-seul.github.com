@@ -38,6 +38,8 @@ encoding: UTF-8
 #### 3.2 Simple Factory
 
 
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/Factory_02.png)
+
 {% highlight python %}
 
 class TouchBarInterface(object):
