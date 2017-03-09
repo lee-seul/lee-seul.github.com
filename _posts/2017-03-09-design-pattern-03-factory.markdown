@@ -40,6 +40,8 @@ encoding: UTF-8
 
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/Factory_02.png)
 
+구성을 이용했을 때 클래스 다이어그램
+
 {% highlight python %}
 
 class TouchBarInterface(object):
