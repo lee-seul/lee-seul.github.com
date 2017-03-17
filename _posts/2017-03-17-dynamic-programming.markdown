@@ -89,6 +89,7 @@ print(dp[x])
 
 2x1, 1x2 타일이 마지막에 올 수 있는 경우는 아래의 2가지 밖에 없다. 
 
+
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/dynamic_programming_02-2.png)
 
 즉, 1x2가 왔을 경우와 2x1가 2개 왔을 때 뿐이다. 그러므로 두 경우를 합하면 길이가 n인 2xn 크기의 
