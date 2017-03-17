@@ -142,3 +142,7 @@ class ConreateMacBookFactory(MacBookFactory):
 #### 3.4 Absract Factory
 실제(concrete) 클래스 등에 의존하지 않고 객체를 생성하는 패턴을 말한다. 실제 클래스까지 서브 클래스에서 생성한다. 
 
+
+<br/>
+<br/>
+

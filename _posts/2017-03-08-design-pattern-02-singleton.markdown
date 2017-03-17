@@ -121,3 +121,7 @@ class Singleton(object):
         return obj
 
 {% endhighlight %}
+
+
+<br/>
+<br/>
