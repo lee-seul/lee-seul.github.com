@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TDD in python, 01 "
-date: 2017-03-20 23:48:22 +0900
+date: 2017-03-21 17:28:22 +0900
 categories: [test, django]
 encoding: UTF-8
 ---
