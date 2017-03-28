@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Data Structure, 01 "
+title: "Data Structure, 01, Stack "
 date: 2017-03-28 14:58:22 +0900
 categories: [algorithm]
 encoding: UTF-8
@@ -71,8 +71,12 @@ python 리스트 특성상 is_full은 구현할 필요가 없다.
 
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stack01.png)
 
+<br/>
+
 스택으로 풀 수 있는 문제 중 대표적인 것이 중위 표기식을 후위 표기식으로
 바꾸는 문제이다. 
+
+<br/>
 
 {% highlight python %}
 
@@ -118,6 +122,7 @@ while stack:
 
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stack02.png)
 
+<br/>
 
 {% highlight python %}
 
