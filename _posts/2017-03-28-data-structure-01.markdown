@@ -29,7 +29,7 @@ data 출력 순서 [data5, data4, data3, data2, data1]
 
 #### 1.1 ADT(Abstract Data Type)
 
-![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stackADT.png)
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stackADT_small.png)
 
 
 <br/>
