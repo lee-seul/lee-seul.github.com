@@ -19,7 +19,9 @@ encoding: UTF-8
 스택은 선형구조 중 하나로, 출력과 입력이 한 곳에서 이루어지는 구조를 말한다. 이름처럼 데이터가 쌓여가는 구조이기때문에 가장 나중에 입력된
 값이 가장 먼저 출력된다.(Last in Fist Out: LIFO)
 
-![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stack.png)
+data입력 순서 [data1, data2, data3, data4, data5]
+data 출력 순서 [data5, data4, data3, data2, data1]
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stack_small.png)
 
 
 <br/>
