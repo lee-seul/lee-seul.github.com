@@ -20,7 +20,11 @@ encoding: UTF-8
 값이 가장 먼저 삭제된다.(Last in Fist Out: LIFO)
 
 data삽입 순서 [data1, data2, data3, data4, data5]
+
 data 삭제 순서 [data5, data4, data3, data2, data1]
+
+<br/>
+
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/stack_small.png)
 
 

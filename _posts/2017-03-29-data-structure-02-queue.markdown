@@ -21,7 +21,11 @@ encoding: UTF-8
 삭제되는 곳이 Front라고 부른다.
 
 data삽입 순서 [data1, data2, data3, data4, data5]
+
 data 삭제 순서 [data1, data2, data3, data4, data5]
+
+<br/>
+
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/queue.png)
 
 
@@ -76,7 +80,11 @@ Python에서 리스트를 사용해 구현할 때에는 상관없지만 일반�
 순환 큐는 일렬로 되어 있는 큐의 Front와 Rear를 연결하여 원형으로 만든 것을 생각하면 이해가 빠르다.
 
 data삽입 순서 [data1, data2, data3, data4, data5]
+
 data 삭제 순서 [data1, data2, data3, data4, data5]
+
+<br/>
+
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/circular.png)
 
 <br/>
