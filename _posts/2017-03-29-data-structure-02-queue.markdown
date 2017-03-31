@@ -2,7 +2,7 @@
 layout: post
 title: "Data Structure, 02, Queue "
 date: 2017-03-29 19:38:22 +0900
-categories: [algorithm]
+categories: [algorithm, python]
 encoding: UTF-8
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Data Structure, 01, Stack "
 date: 2017-03-28 14:58:22 +0900
-categories: [algorithm]
+categories: [algorithm, python]
 encoding: UTF-8
 ---
 
