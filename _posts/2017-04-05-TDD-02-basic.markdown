@@ -32,7 +32,7 @@ Page 61
 ```html
 <form method="POST">
   <input id="id_new_item" name="item_text" placeholder="Enter a to-do item" />
-  "{% csrf_token %}"
+  {\% csrf_token \%}
 </form>
 ```
 
