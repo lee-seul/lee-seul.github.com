@@ -1,0 +1,52 @@
+---
+layout: post
+title: "TDD in python, 02 "
+date: 2017-04-05 23:28:22 +0900
+categories: [test, django]
+encoding: UTF-8
+---
+
+(파이썬을 이용한) 클린 코드를 위한 테스트 주도 개발 책 내용을 공부하면서 정리한 글
+
+작업 환경
+- macOS Sierra, 10.12.3
+- python, 3.6.0
+- django, 1.9.7
+- selenium, 3.3.1
+- firefox, 52.0.1
+
+<br/>
+
+
+### 2. 1부 TDD와 Django 개요에서 막힌 부분 정리
+
+ch05, ch06에서 알 수 없는 에러로 인해 진행이 어려웠던 부분들을 정리
+
+
+1. response 비교(csrf 토큰) = 1
+2. timeout = 2
+3. url == url
+4. regex
+
+
+#### 2.1 POST 요청을 전송하기 위한 폼(Form) 연동 
+
+Page 61
+
+
+{% highlight html %}
+
+<form method="POST">
+  <input id="id_new_item" name="item_text" placeholder="Enter a to-do item" />
+  {% csrf_token %}
+</form>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
