@@ -22,26 +22,172 @@ encoding: UTF-8
 
 ch05, ch06에서 알 수 없는 에러로 인해 진행이 어려웠던 부분들을 정리
 
-
-1. response 비교(csrf 토큰) = 1
-2. timeout = 2
-3. url == url
-4. regex
-
+<br/>
 
 #### 2.1 POST 요청을 전송하기 위한 폼(Form) 연동 
 
 Page 61
 
 
-{% highlight html %}
-
+```html
 <form method="POST">
   <input id="id_new_item" name="item_text" placeholder="Enter a to-do item" />
   {% csrf_token %}
 </form>
+```
+
+이 부분에서 기능 테스트 수행 시 table 안에서 입력한 값을 제대로 찾지 못하는 에러가 발생한다.
+
+
+삽질 도중 발견한 Stackoverflow에서 본 해결 방법!
+
+{% highlight python %}
+
+from django.test import LiveServerTestCase
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.expected_conditions import staleness_of
+from selenium.webdriver.common.keys import Keys
+from contextlib import contextmanager
+import unittest
+
+
+class NewVisitorTest(LiveServerTestCase):
+
+    @contextmanager
+    def wait_for_page_load(self, timeout=30):
+        old_page = self.browser.find_element_by_tag_name('html')
+        yield WebDriverWait(self.browser, timeout).until(
+                            staleness_of(old_page)
+                            )
+
+        [....]
+
+        # 엔터키를 치면 페이지가 갱신되고 작업 목록에
+        # "1: 공작깃털 사기" 아이템이 추가된다
+        inputbox.send_keys(Keys.ENTER)
+
+        with self.wait_for_page_load(timeout=5):
+            self.check_for_row_in_list_table('1: 공작깃털 사기')
+
+       [....]
+
+        # 페이지는 다시 갱신되고, 두 개 아이템이 목록에 보인다
+        with self.wait_for_page_load(timeout=10):
+            self.check_for_row_in_list_table('2: 공작깃털을 이용해서 그물 만들기')
+            self.check_for_row_in_list_table('1: 공작깃털 사기')
+
 
 {% endhighlight %}
+
+입력 후 약간의 시간을 준 이후 확인하도록하여 오류를 없앤다.
+
+
+<br/>
+<br/>
+
+
+
+#### 2.2 test_home_page_can_save_a_POST_reqeust
+
+Page 76
+
+
+기능 테스트 중 POST 요청으로 보낸 아이템이 저장되어 실제로 html로 보여지는지 확인하는 부분에서
+
+self.assertEqual(response.content.decode(), expected_html)에서 오류가 발생한다.
+
+----
+AssertionError: '<!DO[263 chars]     <input type=\'hidden\' name=\'csrfmiddlew[159 chars]tml>' != '<!DO[263 chars]     \
+n    </form>\n\n    <table id="id_list_t[62 chars]tml>'
+
+----
+
+해당 에러는 csrf_token으로 인해 input의 value값이 달라지기때문에 발생한다. 
+
+<br/>
+
+
+{% highlight python %}
+
+
+class HomePageTest(TestCase):
+
+    [....]
+
+    def test_home_page_returns_correct_html(self):
+        request = HttpRequest()
+        response = home_page(request)
+        expected_response = render(request, 'home.html')
+        self.assertEqual(response.content.decode(),
+                         expected_response.content.decode())
+
+                        
+    [....]
+
+{% endhighlight %}
+
+
+Page 82에 나오는  test_home_page_displays_all_list_items에도 적용할 수 있다.
+
+
+
+<br/>
+<br/>
+
+
+
+#### 2.3 Regex didn't match: '/lists/.+' not found in 'http://localhost:8081/'
+
+
+Page 99 
+
+----
+self.assertRegex(edith_list_url, '/lists/.+')
+AssertionError: Regex didn't match: '/lists/.+' not found in 'http://localhost:8081/
+
+----
+
+와 같은 에러를 Ch6이 끝날 때까지 내뿜는다. 이 문제는 keys.ENTER를 실행할 때마다 새로운 리스트가 생성되고 그 리스트에 
+해당하는 URL로 이동한 이후에 edith_list_url, '/lists/.+' 두 개를 비교해야하지만 이동이 되기 전에 assert문이 
+실행되기때문에 오류가 발생한다. 
+
+따라서 명시적으로 time.sleep(1)을 Keys.ENTER 뒤에 모두 넣어 주었다. 
+
+
+
+{% highlight python %}
+
+import time
+
+    [....]
+
+    inputbox.send_keys(Keys.ENTER)
+
+    time.sleep(1)
+    francis_list_url = self.browser.current_url
+    self.assertRegex(francis_list_url, '/lists/.+')
+    self.assertNotEqual(francis_list_url, edith_list_url)
+
+                        
+    [....]
+
+{% endhighlight %}
+
+
+추가로 함께 출력되던 아래의 에러도 함께 해결된다.
+
+----
+self.assertNotEqual(francis_list_url, edith_list_url)
+AssertionError: 'http://localhost:8081/lists/the-only-list-in-the-world/' == 'http://localhost:8081/lists/the-only-list-in-the-world/'
+
+----
+
+<br/>
+<br/>
+
+
+
 
 
 
