@@ -194,6 +194,39 @@ class BinaryTree:
 
 
 <br/>
+
+##### 레벨 순회
+
+<br/>
+
+레벨 순회란 트리의 낮은 레벨부터 순차적으로 순회하는 방식이다. 레벨 1을 모두 순회한 이후 레벨 2,
+레벨 2를 모두 순회한 이후 레벨 3을 순회하는 식이다.
+
+레벨 순회는 큐를 활용하여 구현이 가능하다.
+
+<br/>
+
+{% highlight python %}
+
+
+class BinaryTree:
+    [....]
+
+    def postorder(self):
+        if self.left_child:
+            self.left_child.postorder()
+        if self.right_child:
+            self.right_child.postorder()
+        print(self.data, end=" ")
+
+{% endhighlight %}
+
+<br/>
+
+위의 트리를 후위 순회한다면 결과는 1, 2, 3, 4, 5
+
+
+<br/>
 <br/>
 
 
