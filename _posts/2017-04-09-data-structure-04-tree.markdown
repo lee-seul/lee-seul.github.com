@@ -212,12 +212,16 @@ class BinaryTree:
 class BinaryTree:
     [....]
 
-    def postorder(self):
-        if self.left_child:
-            self.left_child.postorder()
-        if self.right_child:
-            self.right_child.postorder()
-        print(self.data, end=" ")
+    def level_order(self):
+        queue = []
+        queue.append(self)
+        while queue:
+            node = queue.pop(0)
+            print(node.data)
+            if node.left:
+                queue.append(node.left)
+            if node.right:
+                queue.append(node.right)
 
 {% endhighlight %}
 
