@@ -27,6 +27,8 @@
 /* 왼쪽 div 최상단 */
 #left-inside-top {
   height: 25%;
+  background-image: url("./profile.jpg");
+  background-size: 100% 100%;
 }
 
 /* 왼쪽 div 중간 */
