@@ -32,14 +32,12 @@ social:
 #  fb_appid: 1749788565247320
 
 urls:
-    - text: About Me
-      url: /about/
+    - text: Resume
+      url: /resume
 #    - text: Projects
 #      url: /projects/
     - text: Github
       url: https://github.com/lee-seul
-    - text: Resume
-      url: /resume
     - text: XML Feed
       url: /feed.xml
 
