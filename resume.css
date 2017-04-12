@@ -1,6 +1,27 @@
 @charset "UTF-8";
 
 
+font.style-left {
+  font-size: 15px;
+  line-height: 80px;
+  color: #e3e3e3;
+}
+
+font.style-intro {
+  font-size: 12px;
+  color: #e3e3e3;
+}
+
+font.style-bottom {
+  font-size: 15px;
+  color: #e3e3e3;
+}
+
+font.style-bottom-skill {
+  font-size: 13px;
+  color: #e3e3e3;
+}
+
 /* 배경 div container */
 #mother-container {
   width: 768px;
@@ -31,9 +52,14 @@
   background-size: 100% 100%;
 }
 
-/* 왼쪽 div 중간 */
+/* 왼쪽 div 중간 위*/
 #left-inside-middle {
-  height: 20%;
+  height: 24%;
+}
+
+/* 왼쪽 div 중간 아래 */
+#left-inside-middle-second {
+  height: 8%;
 }
 
 /* 왼쪽 div 아래 */
@@ -47,22 +73,30 @@
 /* 왼쪽 icons */
 #left-inside-icons {
   height: 100%;
-  width: 30%;
+  width: 25%;
   text-align: center;
   float: left;
-  padding: 30px;
+  padding: 20px;
 }
 
 /* 왼쪽 text */
 #left-inside-text {
   height: 100%;
-  width: 70%;
+  width: 75%;
   text-align: center;
+  float: right;
+  padding: 0px;
+  border-bottom: 1px solid #6ab0e1;
+}
+
+#left-inside-text-top {
+  height: 100%;
+  width: 75%;
+  text-align: left;
   float: right;
   padding: 20px;
   border-bottom: 1px solid #6ab0e1;
 }
-
 
 
 
@@ -81,25 +115,25 @@
 
 /* 오른쪽 div 최상단 */
 #right-container-one {
-  width: 55%;
+  width: 60%;
   height: 33%;
 }
 
 /* 오른쪽 div 위에서 두 번째 */
 #right-container-two {
-  width: 55%;
+  width: 60%;
   height: 33%;
 }
 
 /* 오른쪽 div 위에서 세 번째 */
 #right-container-three {
-  width: 55%;
+  width: 60%;
   height: 15%;
 }
 
 /* 오른쪽 div 위에서 네 번째 */
 #right-container-four {
-  width: 55%;
+  width: 60%;
   height: 5%;
 }
 
@@ -157,11 +191,12 @@
 
 /* 오른쪽 div 공통 속성 클래스 */
 .container-right {
-  margin: 20px 20px 5px 40px;
+  margin: 20px 20px 5px 30px;
   border: 1px solid #d2d2d2;
   background-color: #fafcfb;
   display: inline-block; 
 }
+
 
 
 
