@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 
+/* 왼쪽 font setting */
 font.style-left {
   font-size: 15px;
   line-height: 30px;
@@ -23,6 +24,39 @@ font.style-bottom-skill {
 }
 
 
+/* 오른쪽 font setting */
+
+#style-right-head {
+  line-height: 50px;
+}
+
+
+#style-right-second-head {
+  line-height: 35px;
+}
+
+#title-font {
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.link-font-set {
+  position: relative;
+  top: 20%;
+  padding: 50px;
+}
+
+.font-color-set-right {
+  color: #727375;
+}
+
+.font-color-set-blue {
+  color: #37a4dc;
+}
+
+.head-font-size {
+  font-size: 20px;
+}
 
 
 
@@ -121,12 +155,12 @@ font.style-bottom-skill {
 
 /* 오른쪽 div 최상단 */
 #right-container-one {
-  height: 22%;
+  height: 25%;
 }
 
 /* 오른쪽 div 위에서 두 번째 */
 #right-container-two {
-  height: 44%;
+  height: 41%;
 }
 
 /* 오른쪽 div 위에서 세 번째 */
@@ -156,6 +190,7 @@ font.style-bottom-skill {
   width: 80%;
   text-align: left;
   float: right;
+  padding: 20px;
 }
 
 
@@ -176,7 +211,7 @@ font.style-bottom-skill {
   width: 100%;
   text-align: left;
   float: right;
-  padding: 10px;
+  padding: 0px;
 }
 
 
@@ -204,7 +239,7 @@ font.style-bottom-skill {
   width: 100%;
   text-align: left;
   float: right;
-  padding: 10px;
+  padding: 0px;
 }
 
 
