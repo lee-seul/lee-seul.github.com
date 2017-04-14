@@ -17,7 +17,7 @@ encoding: UTF-8
 <br/>
 
 
-#### 문제 쪼개기 
+##### 문제 쪼개기 
 
 일단, For Loop, Array, String, Assignment를 사용하지 못하는 제한 사항이 있다.
 
@@ -71,7 +71,7 @@ print(pingpong(int(input()))) # x를 입력받아 결과 값을 출력
 
 분해한 문제 4개를 하나씩 풀어보면,
 
-1. x == c(진행 횟수)
+##### 1. x == c(진행 횟수)
 
 <br/>
 
@@ -89,7 +89,7 @@ def get_pingpong(x, n, c, plus):
 <br/>
 
 
-2. n + plus
+##### 2. n + plus
 
 <br/>
 
@@ -113,7 +113,7 @@ def get_pingpong(x, n, c, plus):
 
 일단, 
 
-3. c % 7 == 0 부터 
+##### 3. c % 7 == 0 부터 
 
 <br/>
 
@@ -137,7 +137,7 @@ def get_pingpong(x, n, c, plus):
 
 seven(c)를 통해 7의 배수일 때 증가값의 변화를 주었다. 마지막으로 
 
-4. '7' in str(c) 
+##### 4. '7' in str(c) 
 
 문제에서 String을 쓰지말라고 했고, 입력 값에 제한이 없다는 전제하에 7이 포함된 수인지를 검사하기위해
 
