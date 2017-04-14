@@ -202,7 +202,12 @@ print(pingpong(int(input())))
 
 {% endhighlight %}
 
+<br/>
 
+1000이상의 값을 입력했더니 RecursionError: maximum recursion depth exceeded를
+내뿜길래 뭔가 했더니 파이썬에서는 리컬전을 1000으로 제한되어있다고 한다.
+
+995까지만 해결이 가능하다....
 
 <br/>
 <br/>
