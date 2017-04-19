@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Data Structure, 05, Binary Search Tree(BST) "
-date: 2017-04-09 17:31:22 +0900
+date: 2017-04-18 17:31:22 +0900
 categories: [algorithm, python]
 encoding: UTF-8
 ---
@@ -15,6 +15,9 @@ encoding: UTF-8
 
 
 ### 5. 이진 탐색 트리(Binary Search Tree)
+
+<br/>
+<br/>
 
 이진 탐색 트리는 이진 트리로서 공백일 수 있고 공백이 아니라면 다음 4가지 성질을 만족해야한다. 
 
