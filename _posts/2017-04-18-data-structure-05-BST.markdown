@@ -38,6 +38,8 @@ encoding: UTF-8
 
 먼저, 트리에 사용될 노드를 구현하면 
 
+{% highlight python %}
+
 class BinaryTree:
     
    class Node:
