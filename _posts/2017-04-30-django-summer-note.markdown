@@ -126,14 +126,9 @@ class BasicForm(forms.Form):
 
 템플릿 단에서 해당 필드를 풀력한 때 safe 필터를 적용해야한다.
 
-{% highlight python %}
 
+content|safe
 
-{{ content|safe }}
-
-[....]
-
-{% endhighlight %}
 
 
 <br/>
