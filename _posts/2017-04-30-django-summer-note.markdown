@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django summer-note"
+title: "Django-summernote"
 date: 2017-04-30 17:31:32 +0900
 categories: [django]
 encoding: UTF-8
