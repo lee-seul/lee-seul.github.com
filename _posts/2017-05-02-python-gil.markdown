@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "python Multi-Threading, Multi-Processing"
+title: "Python Multi-Threading, Multi-Processing"
 date: 2017-04-30 17:31:32 +0900
 categories: [python]
 encoding: UTF-8
