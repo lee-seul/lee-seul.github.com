@@ -29,7 +29,7 @@ encoding: UTF-8
 
 <br/>
 
-즉, AVL 트리는,
+즉, AVL 트리는
 
 - 이진 검색 트리
 - 어떤 노드의 오른쪽 자식 트리와 왼쪽 자식 트리의 높이 차이가 1 이하인 트리
@@ -80,9 +80,93 @@ AVL 트리이다.
 ##### 단순 회전 
 
 <br/>
+<br/>
+
+**왼쪽 왼쪽 회전(LL회전)** 
+
+<br/>
+
+첫 번째 경우 필요한 회전이다. 
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_02.png)
 
 
+<br/>
 
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_03.png)
+
+<br/>
+
+11이 삽입되어 균형이 깨어졌으므로 16을 중심으로 LL회전하여 균형을 맞춘다. 16이 한칸, 13이 한칸, 11이 한칸 이동하면 위의 그림과 같은 결과가 나온다.
+
+<br/>
+
+**오른쪽 오른쪽 회전(RR회전)** 
+
+<br/>
+
+두 번째 경우 필요한 회전이다. LL회전과 반대
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_04.png)
+
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_05.png)
+
+<br/>
+
+##### 이중 회전 
+
+<br/>
+<br/>
+
+**왼쪽 오른쪽 회전(LR회전)** 
+
+<br/>
+
+세 번째 필요한 회전으로 단순 회전 한번만으로 해결이 어렵기때문에 두번의 회전을 통해 해결한다. LR회전은 이름처럼 L회전과 R회전을 순서대로 수행한다. 
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_06.png)
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_07.png)
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_08.png)
+
+<br/>
+
+B를 중심으로 왼쪽 회전을 실행 후, A에서 오른쪽 회전을 실행하여 트리의 균형을 맞춘는 방법이다.
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_09.png)
+
+<br/>
+
+9가 삽입되어 균형이 깨어진 상태에서 균형을 다시 맞추기위해 5를 중심으로 왼쪽 회전 한번, 10을 중심으로 오른쪽 회전을 실행하여 다시 균형을 맞추었다.
+
+<br/>
+
+
+**오른쪽 왼쪽 회전(RL회전)** 
+
+<br/>
+
+네 번째 경우는 LR회전에서 L회전, R회전의 순서만 바뀐다. 
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_10.png)
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_11.png)
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_12.png)
+
+<br/>
+
+![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/AVL_13.png)
 
 <br/>
 <br/>
