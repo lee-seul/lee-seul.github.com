@@ -10,13 +10,13 @@ encoding: UTF-8
 스토리지 엔진이란 데이터베이스에 데이터를 insert, update, delete, select 등을 수행할 때 필요한 컴포넌트이다. <br/>
 MySQL에는 MyISAM, InnoDB, NDB, Archive, Fedorated, Memory, Partner, Community, Custom 등등의 <br/>
 다양한 스토리지 엔진이 존재한다. 그 중 현재 가장 많이 쓰이고 있는 MyISAM과 InnoDB에 대해 정리해보고자 한다.<br/>
- <br/>
+<br/>
 
 
 
- ### MyISAM
+### MyISAM
 
- <br/>
+<br/>
 
 MyISAM은 MySQL 5.5 이전에는 기본 스토리지 엔진이었지만, 5.5 이후부터는 InnoDB로 기본 스토리지 엔진이 변경되었다. <br/>
 InnoDB와 대비되는 MyISAM의 가장 큰 특징은 트랜잭션을 지원하지 않는다는 점이며, 기능적으로 InnoDB에 비해 <br/>
@@ -31,9 +31,9 @@ InnoDB와 대비되는 MyISAM의 가장 큰 특징은 트랜잭션을 지원하�
 <br/>
 <br/>
 
- ### InnoDB
+### InnoDB
 
- <br/>
+<br/>
 InnoDB는 ACID(원자성, 일관성, 고립성, 지속성) 트랜잭션을 지원한다(commit, rollback 등이 가능). <br/>
  또한 FK를 지원하며 백업 및 특정 시점 복구가 가능하다. <br/>
 
