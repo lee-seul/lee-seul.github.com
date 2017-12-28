@@ -210,6 +210,9 @@ $ ssh -i “~.pem" ubuntu@ 할당 받은 IP
 <br/>
 
 ```shell
+$ export LANGUAGE=en_US.UTF-8
+$ export LC_ALL=en_US.UTF-8
+$ sudo locale-gen en_US.UTF-8
 $ sudo dpkg-reconfigure locales
 ```
 
