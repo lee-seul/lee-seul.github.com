@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL, MyISAM vs InnoDB"
 date: 2017-12-19 23:50:20 +0900
-categories: [others]
+categories: [backend]
 encoding: UTF-8
 ---
 

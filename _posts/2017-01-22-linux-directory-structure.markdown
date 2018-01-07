@@ -2,7 +2,7 @@
 layout: post
 title: "Linux Directory Structure"
 date: 2017-01-22 18:33:21 +0900
-categories: [linux]
+categories: [linux, backend]
 encoding: UTF-8
 ---
 

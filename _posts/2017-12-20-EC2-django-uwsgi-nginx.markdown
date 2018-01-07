@@ -2,7 +2,7 @@
 layout: post
 title: "EC2 구성부터 django 서비스 배포까지"
 date: 2017-12-20 22:43:11 +0900
-categories: [others]
+categories: [backend]
 encoding: UTF-8
 ---
 
