@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Django model ForeinkeyField on_delete"
-date: 2018-01-028 17:21:23 +0900
+date: 2018-01-28 17:21:23 +0900
 categories: [django, backend]
 encoding: UTF-8
 ---
