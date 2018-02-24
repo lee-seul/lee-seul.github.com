@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Django, django_admin_log 테이블"
-date: 2018-02-03 17:27:11 +0900
-categories: [django, backend]
+date: 2018-02-24 13:53:27 +0900
+categories: [django]
 encoding: UTF-8
 ---
 
