@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Github에서 Two-factor authentication(이중 인증) 사용하기"
-date: 2018-02-03 17:27:11 +0900
+date: 2018-04-13 20:46:51 +0900
 categories: [other, git]
 encoding: UTF-8
 ---
