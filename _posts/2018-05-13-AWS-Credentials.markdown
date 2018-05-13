@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AWS Credentials 설정"
-date: 2018-05-13 15:55:59 +0900
+date: 2018-05-13 15:05:59 +0900
 categories: [other]
 encoding: UTF-8
 ---
