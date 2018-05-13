@@ -25,7 +25,7 @@ encoding: UTF-8
 거기다 Python인데다 사용법도 간단해 보여서 일단 Chalice로 구현하고 만들어진 아키텍처를 보면서 공부할 예정이다. 
 
 <br>
-지금까지 만들어진 서버쪽 소스 코드는 [여기](https://github.com/lee-seul/recording-server) 로 가면 볼 수 있다.
+지금까지 만들어진 서버쪽 소스 코드는 [ttps://github.com/lee-seul/recording-server](https://github.com/lee-seul/recording-server) 로 가면 볼 수 있다.
 
 <br>
 <br>
@@ -71,11 +71,11 @@ Chalice에서 deploy 명령만으로도 알아서 만들어 지므로 크게 신
 
 AWS Lambda와 Amazon API Gateway, IAM role 등 필요한 것들을 자동으로 만들어 주어 정말로 코드에만 신경쓰면 되도록 도와 준다. 
 
-[여기](https://github.com/aws/chalice)로 가면 전체 소스 코드를 볼 수 있다. 
+[https://github.com/aws/chalice](https://github.com/aws/chalice)로 가면 전체 소스 코드를 볼 수 있다. 
 
 설명을 자세하게 하고 싶었지만 매우 편리하다는 것 말고는 크게 설명할 것이 없는 것 같다. 
 
-자세한 정보는 [공식 문서](http://chalice.readthedocs.io/en/latest/)에서 볼 수 있다. 
+자세한 정보는 [공식 문서 http://chalice.readthedocs.io/en/latest/](http://chalice.readthedocs.io/en/latest/)에서 볼 수 있다. 
 
 
 <br>
