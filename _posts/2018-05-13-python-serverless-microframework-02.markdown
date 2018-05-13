@@ -9,6 +9,12 @@ encoding: UTF-8
 <br>
 <br>
 
+지금까지 만들어진 서버쪽 
+
+소스 코드는 [https://github.com/lee-seul/recording-server](https://github.com/lee-seul/recording-server) 로 가면 볼 수 있다.
+
+<br>
+
 지난 장에 이어서 이번 장에서는 Chalice 설치, 설정 및 공식 문서에 나오는 튜토리얼을 진행한다. 
 
 <br>
