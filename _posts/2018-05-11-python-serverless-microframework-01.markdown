@@ -25,7 +25,7 @@ encoding: UTF-8
 거기다 Python인데다 사용법도 간단해 보여서 일단 Chalice로 구현하고 만들어진 아키텍처를 보면서 공부할 예정이다. 
 
 <br>
-지금까지 만들어진 서버쪽 소스 코드는 [ttps://github.com/lee-seul/recording-server](https://github.com/lee-seul/recording-server) 로 가면 볼 수 있다.
+지금까지 만들어진 서버쪽 소스 코드는 [https://github.com/lee-seul/recording-server](https://github.com/lee-seul/recording-server) 로 가면 볼 수 있다.
 
 <br>
 <br>
