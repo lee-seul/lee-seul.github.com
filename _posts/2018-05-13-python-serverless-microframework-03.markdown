@@ -114,6 +114,8 @@ IAM role에 대한 탭인데 클릭해서 이동한다.
 
 DynamoDB는 key-value data stores 방식의 NoSQL 데이터베이스이다. 
 
+<br>
+
 참고로 NoSQL 데이터베이스에는 
 
 * Key-value data stores
@@ -140,12 +142,16 @@ DynamoDB에서는 스키마를 강제하지 않아 미리 형식을 정의할 �
 녹음 파일 테이블에는 녹음 파일을 식별할 파티션 키와 어떤 유저의 파일인지를 확인하기 위해 user의 파티션 키를 저장한다. 
 
 <br>
+<br>
 
 각 테이블과 필요한 필드들을 정리해보면 
 
 * 회원정보 테이블
     * id (partition key), 유저를 식별하기 위한 값 
     * auth_key (sort key), 앱과의 통신 도중 인증을 위해 필요한 값 
+
+<br>
+
 * 녹음 파일 테이블
     * id(partition key), 파일을 식별하기 위한 값
     * user_id(sort key), 어떤 유저가 업로드한 파일인지를 확인하기 위한 값
