@@ -56,9 +56,9 @@ drwxr-xr-x   .chalice
 
 chalice deploy 이후에 AWS Lambda에서 코드가 실제로 어떻게 올라갔는지 확인해보면 app.py 파일만 업로드되어 있는 것을 알 수 있을 것이다. 
 
-app.py에 모든 소스 코드를 넣을 수 없으므로 새로운 파이썬 패키지를 하나 만들어주고 거기에 db_handler.py라는 이름으로 
+app.py에 모든 소스 코드를 넣을 수 없으므로 새로운 파이썬 패키지를 하나 만들어주고 거기에 db_handler.py라는 이름으로 DB를 다루는 코드를 추가한다. 
 
-DB를 다루는 코드를 추가한다. 
+(chalice deploy를 통해 AWS Lambda에 소스가 배포될 때 app.py와 chalicelib만이 반영된다.)
 
 <br>
 
