@@ -288,9 +288,18 @@ def sign_up_or_login(social_id, social_type):
 
 간단한 코드이다. 
 
-social_id와 social_type을 조합해 record_user 테이블에 해당하는 id 값을 가진 로우가 있는지 scan_item을 통해 확인한다. 
+social_id와 social_type을 조합해 record_user 테이블에 해당하는 id 값을 가진 로우가 있는지 scan_item을 통해 가입 여부를 확인한다. 
 
-그런 다음 일치하는 값이 존재한다면 회원가입을 했던 유저이므로 그대로 auth_key를 반환하여 클라이언트에서 로그인 처리가 되도록 한다. 
+
+<br>
+
+**3. 가입 여부에 따라 필요한 처리**
+
+가입 여부를 확인했으니 그에 따라 필요한 처리를 해주면 된다.
+
+record_user 테이블에 일치하는 값이 존재한다면 회원가입을 했던 유저이므로 
+
+그대로 auth_key를 반환하여 클라이언트에서 로그인 처리가 되도록 한다. 
 
 반대로 일치하는 값이 없다면 회원가입을 하지 않은 유저로 generate_key를 활용해 auth_key를 만든 다음 DB에 Insert 해준 다음 
 
@@ -325,6 +334,10 @@ generate_key는 숫자 n을 인자로 받아 n 길이만큼의 숫자와 문자�
 make_user_id는 social_id와 social_type을 혼합하여 user_id를 만들어주는 함수이다. 
 
 <br>
+<br>
+
+**4. 처리가 완료되면 인증에 필요한 키를 클라이언트에 전달**
+
 
 다시 app.py로 돌아가 로그인/회원가입 API를 마무리하도록 하겠다. 
 
