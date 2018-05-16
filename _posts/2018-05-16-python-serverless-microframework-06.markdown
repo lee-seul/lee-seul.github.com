@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python Serverless Microframework, Chalice 사용하기, 06"
-date: 2018-05-15 21:02:33 +0900
+date: 2018-05-16 21:22:33 +0900
 categories: [python, backend]
 encoding: UTF-8
 ---
