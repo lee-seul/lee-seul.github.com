@@ -115,8 +115,8 @@ AWS Credential은 아래 링크 글을 따라하면 된다.
 ```shell
 $ chalice deploy
 Creating deployment package.
-Updating policy for IAM role: recording-dev
-Updating lambda function: recording-dev
+Updating policy for IAM role: record-dev
+Updating lambda function: record-dev
 Updating rest API
 Resources deployed:
   - Lambda ARN: arn:aws:lambda:ap-northeast-2:641123456845:function:record-dev

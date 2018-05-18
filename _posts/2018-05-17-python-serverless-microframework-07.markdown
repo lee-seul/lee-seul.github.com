@@ -151,7 +151,7 @@ def check_authorization(request):
         'auth_key': auth_key
     }
 
-    user = db.get_item('recording', 'user', query_item)
+    user = db.get_item('record_user', query_item)
     return user
 
 
