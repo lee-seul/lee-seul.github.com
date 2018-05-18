@@ -30,7 +30,7 @@ encoding: UTF-8
 <br>
 
 
-### 7. Chalice로 로그인/회원가입 API 
+### 7. Chalice, 로그인/회원가입 API 
 <br>
 
 

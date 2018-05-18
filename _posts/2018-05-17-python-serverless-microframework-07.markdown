@@ -27,7 +27,7 @@ encoding: UTF-8
 <br>
 
 
-### 8. Chalice로 녹음 파일 업로드 API 
+### 8. Chalice, 녹음 파일 업로드 API 
 
 <br>
 
