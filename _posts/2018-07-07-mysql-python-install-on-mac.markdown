@@ -33,6 +33,9 @@ $ brew install mysql@5.5
 그런 다음 설치하면 정상적으로 설치된다.(이번 경우에는)
 
 
+<br>
 
 MySQL-python은 python3를 지원하지 않으며 2014년 1월 2일이 배포된 버전이 최신 버전이므로 PyMySQL이나 다른 MySQL connector를 사용하기 바란다. 
 
+<br>
+<br>
