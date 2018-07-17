@@ -65,7 +65,7 @@ pip install requests_html
 
 각 항목의 구조가 모두 같으로므로 하나에 대응하는 크롤러 코드를 짜고 for문으로 대응해주면 된다. 
 
-그리고 페이지가 7까지 있으므로 각 페이지를 모두 크롤릴해주면 된다. 
+그리고 페이지가 7까지 있으므로 각 페이지를 모두 크롤해주면 된다. 링
 
 ![branch Image](https://raw.githubusercontent.com/lee-seul/lee-seul.github.com/master/static/img/_posts/requests_html_02.png)
 
