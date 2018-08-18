@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python으로 네이버 백과 사전 손 쉽게 크롤링하기, requests_html example"
-date: 2018-07-15 28:11:52 +0900
+date: 2018-07-15 18:11:52 +0900
 categories: [python]
 encoding: UTF-8
 ---
