@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kotlin basic"
-date: 2018-11-10 21:11:23 +0900
+date: 2018-11-10 13:11:23 +0900
 categories: [other]
 encoding: UTF-8
 ---
