@@ -61,6 +61,7 @@ Admin페이지가 느려지는 것을 경험할 수 있다.
 
 name을 찾는 쿼리가 100번 실행된다. (N+1 문제)
 
+<br>
 
 N+1 문제는 ORM을 사용하는 어디에서나 발생할 수 있는데 select_related이나 prefetch_related를 통해 해결할 수 있다. 
 
