@@ -55,7 +55,9 @@ class BookAdmin(admin.ModelAdmin):
 
 Admin페이지가 느려지는 것을 경험할 수 있다. 
 
-위와 같은 코드가 문제가 되는 이유는, Book 모델을 전부 가져온 다음에 각 Book 모델에 대해 author_name이 실행되기때문에 Book 모델이 많아지면 많아질수록 실행되는 쿼리의 수가 늘어나기 때문이다. 
+위와 같은 코드가 문제가 되는 이유는, Book 모델을 전부 가져온 다음에 각 Book 모델에 대해 
+
+author_name이 실행되기때문에 Book 모델이 많아지면 많아질수록 실행되는 쿼리의 수가 늘어나기 때문이다. 
 
 즉, Book이 100개의 row를 가지고 있다면, book.author.name 코드를 통해 DB에서 book에 해당 하는 author의 
 
