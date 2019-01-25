@@ -36,7 +36,7 @@ class TestModel(models.Model):
 
 
 class FKModel(models.Model):
-    test = models.ForeignKeyField(TestModel, on_delete=models.CASCASE)
+    test = models.ForeignKeyField(TestModel, on_delete=models.CASCADE)
 
     # skip
 
