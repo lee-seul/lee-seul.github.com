@@ -34,9 +34,13 @@ except:
 
 ---
 
+<br>
+
 만약 with transaction.atomic 블록 안에서 try-except 처리를 한다면 예상치 못한 오류가 생길 수가 있다. 
 
 django 테스트 코드 중 일부를 살펴보면 아래와 같은 코드가 있다. 
+
+<br>
 
 ```python
     def test_mark_for_rollback_on_error_in_transaction(self):
