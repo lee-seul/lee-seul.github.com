@@ -36,7 +36,8 @@ except:
 
 <br>
 
-만약 with transaction.atomic 블록 안에서 try-except 처리를 한다면 예상치 못한 오류가 생길 수가 있다. 
+만약 with transaction.atomic 블록 안에서 try-except 처리를 한다면 예상치 못한 오류가 생길 수가 있다.
+(transaction.atomic 블록 내부에서 Raise 발생시 제대로 rollback을 수행하지 못하고, 다른 API 까지 고장나게 만든다.) 
 
 django 테스트 코드 중 일부를 살펴보면 아래와 같은 코드가 있다. 
 
@@ -71,7 +72,9 @@ django 테스트 코드 중 일부를 살펴보면 아래와 같은 코드가 �
 
 transaction.atomic 내부에서 Exception 발생 시 django는 해당 transaction을 rollback 하는데, 
 
-exception이 try-except 처리된 경우 제대로 rollback이 수행되지 못하여, connection 자체가 깨지는 문제가 생긴다. (정확하게 말하면 uwsgi worker가 고장이 난다)
+exception이 내부에서 try-except 처리된 경우 제대로 rollback이 수행되지 못하여, 
+
+connection 자체가 깨지는 문제가 생긴다. (정확하게 말하면 uwsgi worker가 고장이 난다)
 
 transaction.atomic 내부 Exception 발생시  connection.needs_rollback = True로 변하고, 
 
@@ -89,7 +92,8 @@ You can't execute queries until the end of the 'atomic' block.라는 메세지�
 
 <br>
 
-즉, transaction.atomic() try-except 를 사용하지말자. (하지말라는 짓은 역시 안하는게 맞다.) 
+transaction.atomic() 내부에서는 try-except 를 사용하지말자. 써야만 한다면 try 블록이 transaction.atomic() 블록을 감싸도록 사용하자. 
+
 
 
 <br>
