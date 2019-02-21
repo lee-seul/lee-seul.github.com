@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Django ManyToManyField 확장하기 "
-date: 2019-02-02 18:21:22 +0900
+date: 2019-02-21 10:39:03 +0900
 categories: [django]
 encoding: UTF-8
 ---
