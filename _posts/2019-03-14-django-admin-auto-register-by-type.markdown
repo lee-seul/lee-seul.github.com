@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "type을 이용한 동적 클래스 생성 및 admin 자동 등록 "
+title: "type을 이용한 동적 클래스 생성 및 Django admin 자동 등록 "
 date: 2019-03-14 11:34:57 +0900
 categories: [django]
 encoding: UTF-8
@@ -9,7 +9,7 @@ encoding: UTF-8
 <br>
 <br>
 
-### type을 이용한 동적 클래스 생성 및 admin 자동 등록 
+### type을 이용한 동적 클래스 생성 및 Django admin 자동 등록 
 
 <br>
 
