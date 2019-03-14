@@ -2,5 +2,5 @@
 layout: posts_by_category
 categories: backend
 title: Backend
-permalink: /category/algorithm
+permalink: /category/backend
 ---
