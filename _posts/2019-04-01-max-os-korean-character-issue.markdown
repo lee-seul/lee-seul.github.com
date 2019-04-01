@@ -17,7 +17,7 @@ encoding: UTF-8
 Mac OS에서 python으로 한글을 다루다 보면 아래와 같은 문제를 겪을 수 있다. 
 (영원히 안 겪을 수도 있다)
 ```python
->>> string = '파이썬'  다
+>>> string = '파이썬'  
 >>> print(string[0])
 ㅍ
 ```
