@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Django Silk를 통한 부하 지점 파악하기 "
+title: "Django Silk를 통한 프로파일링하기 "
 date: 2019-05-01 11:51:41 +0900
 categories: [django]
 encoding: UTF-8
