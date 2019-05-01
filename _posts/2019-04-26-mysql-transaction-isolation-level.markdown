@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MySQL Transaction isolation level"
-date: 2019-04-26 11:21:25 +0900
+date: 2019-04-26 10:25:25 +0900
 categories: [backend]
 encoding: UTF-8
 ---
