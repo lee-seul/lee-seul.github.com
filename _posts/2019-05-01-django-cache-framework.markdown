@@ -64,6 +64,7 @@ ElaticCache에 Redis를 띄운 후 설정했다.
 캐시 사용은 더 간단하다. 
 
 ```python
+from django.core.cache import cache
 
 def get_post_count():
         cache_key = 'my_blog_post_count'
@@ -93,7 +94,9 @@ cache.set() 의 경우 캐싱할 데이터의 키와 데이터 그리고 유효 
 
 유효 기간을 오늘이 끝나는 시간으로 설정한다면 하루 동안 동일 요청에 대한 쿼리가 DB에 단 한번만 실행되게 되므로 DB 서버에서 실행되는 쿼리 숫자를 줄일 수 있게 된다.
 
+이번 포스팅의 경우 Django에서 cache를 사용하는 가장 간단한 방법에 대해서만 다루었으므로, 
 
+cache를 사용한다면 캐시를 사용해도 되는지 여부와 유효 기간을 얼마나 둘지에 대해 한번 더 생각해보고 적용하기를 바란다. 
 
 <br>
 <br>
